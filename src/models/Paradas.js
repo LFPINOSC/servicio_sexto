@@ -1,7 +1,7 @@
 import { DataTypes } from 'sequelize';
 import sequelize from '../config/sequelizeConfig.js';
 
-const TipoParada = sequelize.define('Parada', {
+const Parada = sequelize.define('Parada', {
   id: {
     type: DataTypes.BIGINT,
     primaryKey: true,
