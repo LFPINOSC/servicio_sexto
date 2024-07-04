@@ -1,5 +1,7 @@
 import { DataTypes } from 'sequelize';
 import sequelize from '../config/sequelizeConfig.js';
+import Dueño from './Dueño.js'
+import Compania from './Compania.js'
 
 const Vehiculo = sequelize.define('Vehiculo', {
   id: {
@@ -35,4 +37,11 @@ const Vehiculo = sequelize.define('Vehiculo', {
   },
   // Otros campos de tipo de usuario
 });
+Vehiculo.belongsTo(Dueño, {
+  foreignKey: 'Cedula_Dueño', // Nombre del campo de clave externa en la tabla de Usuario con relacion a tipo de usuario
+});
+Vehiculo.belongsTo(Compania, {
+  foreignKey: 'id_Compania', // Nombre del campo de clave externa en la tabla de Usuario con relacion a tipo de usuario
+});
+
 export default Vehiculo;
