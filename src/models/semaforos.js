@@ -1,5 +1,6 @@
 import { DataTypes } from 'sequelize';
-import sequelize from '../config/sequelizeConfig.js';
+import sequelize from '../config/sequelizeConfig.js'; 
+import calle from "./Calle.js"
 
 const semaforos = sequelize.define('semaforos', {
  id: {
@@ -30,4 +31,10 @@ const semaforos = sequelize.define('semaforos', {
   },
   // Otros campos de tipo de usuario
 });
-export default TipoUsuario;
+semaforo.belongsTo(calle, {
+  foreignKey: 'CalleSecuencialPrincipal', // Nombre del campo de clave externa en la tabla de Usuario con relacion a tipo de usuario
+});
+semaforo.belongsTo(calle, {
+  foreignKey: 'CalleSecuencialSecundaria', // Nombre del campo de clave externa en la tabla de Usuario con relacion a tipo de usuario
+});
+export default semaforos;
