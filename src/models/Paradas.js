@@ -31,7 +31,7 @@ const Parada = sequelize.define('Parada', {
   },
   // Otros campos de tipo de usuario
 });
-Parada.belongsTo(Calle, {
+Paradas.belongsTo(Calle, {
   foreignKey: 'CalleSecuencial', // Nombre del campo de clave externa en la tabla de Usuario con relacion a tipo de usuario
 });
 export default Paradas;
