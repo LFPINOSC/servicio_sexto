@@ -1,5 +1,6 @@
-import { DataTypes } from 'sequelize';
+import { DataTypes, ForeignKeyConstraintError } from 'sequelize';
 import sequelize from '../config/sequelizeConfig.js';
+import Calle from './Calle.js'
 
 const Parada = sequelize.define('Parada', {
   id: {
@@ -30,4 +31,7 @@ const Parada = sequelize.define('Parada', {
   },
   // Otros campos de tipo de usuario
 });
-export default TipoUsuario;
+Parada.belongsTo(Calle, {
+  foreignKey: 'CalleSecuencial', // Nombre del campo de clave externa en la tabla de Usuario con relacion a tipo de usuario
+});
+export default Paradas;
