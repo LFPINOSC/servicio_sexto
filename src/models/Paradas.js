@@ -2,7 +2,7 @@ import { DataTypes, ForeignKeyConstraintError } from 'sequelize';
 import sequelize from '../config/sequelizeConfig.js';
 import Calle from './Calle.js'
 
-const Parada = sequelize.define('Parada', {
+const Paradas = sequelize.define('Parada', {
   id: {
     type: DataTypes.BIGINT,
     primaryKey: true,
