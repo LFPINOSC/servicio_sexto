@@ -39,4 +39,4 @@ const Negocios = sequelize.define('Negocios', {
 Negocios.belongsTo(calle, {
   foreignKey: 'CalleSecuencial', // Nombre del campo de clave externa en la tabla de Usuario con relacion a tipo de usuario
 });
-export default TipoNegocio;
+export default Negocios;
