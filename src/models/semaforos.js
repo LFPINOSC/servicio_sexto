@@ -31,10 +31,10 @@ const semaforos = sequelize.define('semaforos', {
   },
   // Otros campos de tipo de usuario
 });
-semaforo.belongsTo(calle, {
+semaforos.belongsTo(calle, {
   foreignKey: 'CalleSecuencialPrincipal', // Nombre del campo de clave externa en la tabla de Usuario con relacion a tipo de usuario
 });
-semaforo.belongsTo(calle, {
+semaforos.belongsTo(calle, {
   foreignKey: 'CalleSecuencialSecundaria', // Nombre del campo de clave externa en la tabla de Usuario con relacion a tipo de usuario
 });
 export default semaforos;
