@@ -1,4 +1,4 @@
-import Dueño from "../models/User.js";
+import Dueño from "../models/Dueño.js";
 import apiResponse from "../components/apiResponse.js";
 import sequelize from "../config/sequelizeConfig.js";
 import { Sequelize } from "sequelize";
@@ -69,7 +69,7 @@ async getAllDueños(req, res) {
         await dueño.update(dueñoData);
         const response = new apiResponse(
           true,
-          user,
+          dueño,
           200,
           "Dueño actualizado exitosamente"
         );
@@ -97,7 +97,7 @@ async getAllDueños(req, res) {
   async deleteDueño(req, res) {
     try {
       const dueñoId = req.params.id;
-      const dueño = await User.findByPk(dueñoId);
+      const dueño = await Dueño.findByPk(dueñoId);
 
       if (dueño) {
         await dueño.destroy();
