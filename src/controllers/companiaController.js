@@ -2,7 +2,7 @@ import Compania from "../models/Compania.js";
 import apiResponse from "../components/apiResponse.js";
 import sequelize from "../config/sequelizeConfig.js";
 import { Sequelize } from "sequelize";
-class UserController {
+class CompaniaController {
     async createCompania(req, res) {
         try {
           const companiaData = req.body;
@@ -71,7 +71,7 @@ class UserController {
             await compania.update(companiaData);
             const response = new apiResponse(
               true,
-              user,
+              compania,
               200,
               "Compania actualizado exitosamente"
             );
