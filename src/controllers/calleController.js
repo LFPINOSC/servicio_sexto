@@ -90,7 +90,6 @@ class CalleController {
           res.status(500).json(response);
         }
       }
-    
       async deleteCalle(req, res) {
         try {
           const calleId = req.params.id;

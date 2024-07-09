@@ -1,8 +1,8 @@
-import User from "../models/semaforos.js";
+import semaforo from "../models/semaforos.js";
 import apiResponse from "../components/apiResponse.js";
 import sequelize from "../config/sequelizeConfig.js";
 import { Sequelize } from "sequelize";
-class UserController {
+class semaforoController {
     async createsemaforo(req, res) {
         try {
           const semaforoData = req.body;
