@@ -68,7 +68,7 @@ class paradasController {
           const paradas = await Paradas.findByPk(paradasId);
          
           if (paradas) {
-            await user.update(paradaData);
+            await paradas.update(paradaData);
             const response = new apiResponse(
               true,
               paradas,
@@ -103,7 +103,7 @@ class paradasController {
           const paradas = await Paradas.findByPk(paradasId);
     
           if (paradas) {
-            await user.destroy();
+            await paradas.destroy();
             const response = new apiResponse(
               true,
               null,
