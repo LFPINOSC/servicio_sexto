@@ -30,4 +30,4 @@ const Calle = sequelize.define('Calle', {
   },
   // Otros campos de tipo de usuario
 });
-export default TipoUsuario;
+export default Calle;
