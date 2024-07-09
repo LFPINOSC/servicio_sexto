@@ -27,8 +27,8 @@ async getAllDueños(req, res) {
       // Devuelve la lista de usuarios como respuesta
       res.status(200).json(dueños);
     } catch (error) {
-      console.error("Error al obtener usuarios:", error);
-      res.status(500).json({ error: "Error al obtener usuarios" });
+      console.error("Error al obtener dueños:", error);
+      res.status(500).json({ error: "Error al obtener dueños" });
     }
   }
   async getDueño(req, res) {
@@ -53,7 +53,7 @@ async getAllDueños(req, res) {
         false,
         null,
         500,
-        "Error del servidor al obtener usuario"
+        "Error del servidor al obtener dueño"
       );
       res.status(500).json(response);
     }
