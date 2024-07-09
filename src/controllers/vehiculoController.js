@@ -1,4 +1,4 @@
-import User from "../models/Vehiculo.js";
+import Vehiculo from "../models/Vehiculo.js";
 import apiResponse from "../components/apiResponse.js";
 import sequelize from "../config/sequelizeConfig.js";
 import { Sequelize } from "sequelize";
@@ -12,7 +12,7 @@ class VehiculoController {
             true,
             vehiculo,
             200,
-            "Usuario creado exitosamente"
+            "Vehiculo creado exitosamente"
           );
           res.status(200).json(response);
         } catch (error) {
