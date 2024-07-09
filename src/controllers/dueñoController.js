@@ -2,7 +2,6 @@ import Dueño from "../models/Dueño.js";
 import apiResponse from "../components/apiResponse.js";
 import sequelize from "../config/sequelizeConfig.js";
 import { Sequelize } from "sequelize";
-import Dueño from "../models/Dueño.js";
 class DueñoController {
     async createDueño(req, res) {
         try {
