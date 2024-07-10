@@ -20,12 +20,12 @@ const semaforos = sequelize.define('semaforos', {
     defaultValue: 1,
   },
   cordenadax: {
-    type: DataTypes.GEOMETRY, 
+    type: DataTypes.FLOAT, 
     allowNull: false,
     defaultValue: 1,
   },
   cordenaday: {
-    type: DataTypes.GEOMETRgit , 
+    type: DataTypes.FLOAT , 
     allowNull: false,
     defaultValue: 1,
   },

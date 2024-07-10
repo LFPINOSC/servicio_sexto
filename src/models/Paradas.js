@@ -15,12 +15,12 @@ const Paradas = sequelize.define('Parada', {
     field: 'Nombre',
   },
   CordenadaX: {
-    type: DataTypes.GEOMETRY, 
+    type: DataTypes.FLOAT, 
     allowNull: false,
     defaultValue: 1,
   },
   CordenadaY: {
-    type: DataTypes.GEOMETRY, 
+    type: DataTypes.FLOAT, 
     allowNull: false,
     defaultValue: 1,
   },
