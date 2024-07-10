@@ -59,7 +59,7 @@ router.get(
  * @openapi
  * /rest/compania/id/{id}:
  *   get:
- *     summary: Obtiene un compania por secuencial.
+ *     summary: Obtiene un compania por id.
  *     tags: [Companias]
  *     parameters:
  *       - in: path
@@ -90,7 +90,7 @@ router.get(
  * @openapi
  * /rest/compania/{id}:
  *   put:
- *     summary: Actualiza un compania por secuencial.
+ *     summary: Actualiza un compania por id.
  *     tags: [Compania]
  *     parameters:
  *       - in: path
