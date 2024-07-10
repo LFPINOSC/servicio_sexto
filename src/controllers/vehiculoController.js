@@ -1,4 +1,3 @@
-import Vehiculo from "../models/Vehiculo.js";
 import apiResponse from "../components/apiResponse.js";
 import sequelize from "../config/sequelizeConfig.js";
 import { Sequelize } from "sequelize";

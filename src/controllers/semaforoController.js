@@ -6,7 +6,7 @@ class semaforoController {
     async createsemaforo(req, res) {
         try {
           const semaforoData = req.body;
-          const semaforo = await User.create(semaforoData);
+          const semaforo = await semaforo.create(semaforoData);
           const response = new apiResponse(
             true,
             semaforo,
@@ -21,9 +21,9 @@ class semaforoController {
     }
     async getAllsemaforo(req, res) {
         try {
-          // Realiza una consulta para obtener todos los usuarios
+          // Realiza una consulta para obtener todos los semaforos
           const semaforos = await semaforos.findAll();
-          // Devuelve la lista de usuarios como respuesta
+          // Devuelve la lista de semaforo como respuesta
           res.status(200).json(semaforo);
         } catch (error) {
           console.error("Error al obtener semaforos:", error);

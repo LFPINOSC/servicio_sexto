@@ -10,7 +10,7 @@ class CalleController {
           const response = new apiResponse(
             true,
             calle,
-            200,
+          200,
             "Calle creado exitosamente"
           );
           res.status(200).json(response);
@@ -57,7 +57,7 @@ class CalleController {
           res.status(500).json(response);
         }
       }
-      async updateCale(req, res) {
+      async updateCalle(req, res) {
         try {
           const calleId = req.params.id;
           const calleData = req.body;
@@ -124,3 +124,4 @@ class CalleController {
         }
       }
 }
+export default new CalleController();
