@@ -132,3 +132,4 @@ class paradasController {
       }
 
 }
+export default new paradasController();
