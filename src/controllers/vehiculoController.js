@@ -125,3 +125,4 @@ class VehiculoController {
         }
       }
 }
+export default new VehiculoController();

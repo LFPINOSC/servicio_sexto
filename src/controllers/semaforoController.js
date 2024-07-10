@@ -125,3 +125,4 @@ class semaforoController {
         }
       }
 }
+export default new semaforoController();

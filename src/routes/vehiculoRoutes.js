@@ -84,7 +84,7 @@ router.get("/rest/vehiculos",
 router.get(
     "/rest/vehiculo/id/:id",
     AuthMiddleware.requireAuth,
-    vehiculoController.getVehiculo
+    VehiculoController.getVehiculo
   );
   /**
  * @openapi
@@ -121,7 +121,7 @@ router.get(
 router.put(
     "/rest/vehiculo/:id",
     AuthMiddleware.requireAuth,
-    vehiculoController.updateVehiculo
+    VehiculoController.updateVehiculo
   );
   
   /**
@@ -148,7 +148,7 @@ router.put(
   router.delete(
     "/rest/vehiculo/:id",
     AuthMiddleware.requireAuth,
-    vehiculoController.deleteVehiculo
+    VehiculoController.deleteVehiculo
   );
   
   export default router;

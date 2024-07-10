@@ -130,3 +130,4 @@ class CompaniaController {
         }
       }
 }
+export default new CompaniaController();

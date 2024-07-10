@@ -4,7 +4,7 @@ import calle from './Calle.js';
 
 const Negocios = sequelize.define('Negocios', {
   id: {
-    type: DataTypes.STRING(13),
+    type: DataTypes.BIGINT,
     primaryKey: true,
     autoIncrement: true,
     autoIncrementIdentity: true,
