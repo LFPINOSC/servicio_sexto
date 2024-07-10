@@ -127,4 +127,6 @@ async getAllDueños(req, res) {
     }
   }
 }
+export default new DueñoController();
+
 
