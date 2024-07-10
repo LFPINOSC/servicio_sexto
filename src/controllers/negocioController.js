@@ -1,4 +1,4 @@
-import Negocio from "../models/Negocio.js";
+import Negocio from "../models/Negocios.js";
 import apiResponse from "../components/apiResponse.js";
 import sequelize from "../config/sequelizeConfig.js";
 import { Sequelize } from "sequelize";
@@ -125,3 +125,4 @@ class NegocioController {
     }
   }
 }
+export default new NegocioController();
